@@ -1,0 +1,249 @@
+
+.match__container {
+    min-height: 160px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 2px solid #1b3d89;
+    border-radius: 10px;
+    border-bottom: 6px solid #1b3d89;
+}
+
+#first {
+    /* position: relative; */
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 130px;
+    width: 99%;
+}
+
+#first .match__teams {
+    display: flex;
+    flex-direction: row;
+    width: calc(100%-55%);
+    /* position: relative; */
+    left: 0;
+    align-content: center;
+    text-align: center;
+    /* justify-content: center; */
+    /* padding-right: 50px; */
+    border-right: 2px solid #ccc;
+}
+
+#first .team1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    display: flex;
+    width: calc(45% - 75px);
+}
+
+#first .team1 img {
+    height: 100px;
+}
+
+#first .team1, #first .team2 h4 {
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+#first .team2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    display: flex;
+    width: calc(45% - 75px);
+}
+
+#first .team2 img {
+    height: 100px;
+}
+
+#first .vs {
+    padding: 40px 60px;
+    color: #a5a3a3;
+    font-weight: lighter;
+}
+
+#first .match__details {
+    width: 52%;
+    justify-content: space-between;
+    display: flex;
+}
+
+#first .match__details button {
+    font-size: 12px;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    background-color: #ff3b00;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+#first .match__details button:hover {
+    background-color: #fff;
+    color: #ff3b00;
+    border: 1px solid #ff3b00;
+}
+
+#first .details {
+    text-align: left;
+    padding-left: 35px;
+    border-left: 2px solid #ccc;
+}
+
+#first .details h5:first-child {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#first .details p {
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+#first .details h5:last-child {
+    color: #1b3d89;
+}
+
+
+#second {
+    display: none;
+}
+
+#second .details {
+    padding: 18px;
+}
+
+#second .details p {
+    font-size: 11px;
+    /* font-weight: lighter; */
+    margin-bottom: 3px;
+}
+
+#second .details h4 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+#second .match__teams {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+#second .team1, .team2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    display: flex;
+    width: calc(45% - 75px);
+}
+
+#second .vs {
+    padding: 40px 60px;
+    color: #a5a3a3;
+    font-weight: lighter;
+}
+
+#second .team1 img {
+    height: 80px;
+}
+
+#second .team2 img {
+    height: 80px;
+}
+
+#second .team1 {
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+#second .team2 h4 {
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+#second .match__details {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* border-bottom: 2px solid #ccc; */
+}
+
+#second .match__details h5 {
+    padding: 12px;
+    font-size: 15px;
+    color: #1b3d89;
+    text-transform: uppercase;
+}
+
+#second .match__details button {
+    font-size: 12px;
+    height: fit-content;
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: #ff3b00;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+#second .match__details button:hover {
+    background-color: #fff;
+    color: #ff3b00;
+    border: 1px solid #ff3b00;
+}
+
+
+@media (max-width: 768px) {
+    #first {
+        display: none;
+    }
+
+    #second {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    #second .team1, #second .team2 {
+      display: inline-grid;  
+    }
+    #second .team1 h4, #second .team2 h4 {
+      font-size: 10px;
+    }
+
+    #second .team1 img {
+        height: 70px;
+    }
+    #second .team2 img {
+        height: 70px;
+    }
+
+    #second .vs {
+        padding: 40px 50px;
+    }
+}
